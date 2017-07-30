@@ -1,0 +1,45 @@
+<view class="container">
+  <view class="title-box">
+    <view>
+      <view class="main-title"><text>{{shopinfo.shop}}</text></view>
+      <view class="sec-title"><text>{{shopinfo.type}}</text></view>
+    </view>
+    <view class="logo">
+      <image src="{{shopinfo.logo[1]}}"></image>
+    </view>
+  </view>
+
+  <navigator class="item" data-loc="{{shopinfo.location}}" data-shopname="{{shopinfo.shop}}" data-address="{{shopinfo.address}}" bindtap="openLocation">
+    <image class="place" src="../../images/place.png"></image>
+    <view><text>{{shopinfo.address}}</text></view>
+    <image class="getmore" src="../../images/getmore.png"></image>
+  </navigator>
+
+  <view class="item">
+    <image class="time" src="../../images/time.png"></image>
+    <view><text>{{shopinfo.openhours}}</text></view>
+  </view>
+
+  <navigator class="item" data-tel="{{shopinfo.tel}}" bindtap="makeCall">
+    <image class="phone" src="../../images/phone.png"></image>
+    <view><text>{{shopinfo.tel}}</text></view>
+    <image class="getmore" src="../../images/getmore.png"></image>
+  </navigator>
+
+  <view class="item">
+    <image class="picture" src="../../images/picture.png"></image>
+    <view><text>门店照片</text></view>
+  </view>
+  <view class="photo-box">
+
+    <view class="row">
+      <block wx:for="{{shopimgs}}" wx:key="img">
+        <image data-img="{{item.imgs[0]}}" src="{{item.imgs[0]}}" mode="aspectFit" bindtap="previewImg"></image>
+      </block>
+    </view>
+  </view>
+  <view class="footer">
+    <view class="website"><text>cloudadmx.com</text></view>
+    <view class="apply"><text>应用窝提供技术支持</text></view>
+  </view>
+</view>

@@ -1,0 +1,19 @@
+{
+  "pages": [
+		"pages/splash/splash",
+    "pages/index/index" 
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "white",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+
+  "networkTimeout": {
+    "request": 15000,
+    "downloadFile": 15000
+  },
+  "debug": true
+}

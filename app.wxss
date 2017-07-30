@@ -1,0 +1,15 @@
+/**app.wxss**/
+.container {
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 32rpx;
+  font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+}
+page {
+  height: 100%;
+  font-family: -apple-system-font, Arial, Helvetica, sans-serif;
+  font-size: 32rpx;
+}
+
